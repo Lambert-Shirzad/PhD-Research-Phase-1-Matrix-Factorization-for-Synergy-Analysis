@@ -1,0 +1,51 @@
+clear all
+clc
+
+load('AvgPCSS5.mat')
+load('AvgPCSS4.mat')
+load('AvgPCSS3.mat')
+
+figure()
+subplot(5,2,1)
+bar([SS3ImpairedPC(:,1),SS4ImpairedPC(:,1),SS5ImpairedPC(:,1)],'DisplayName','LeftPC1')
+axis([0 11 -1 1])
+subplot(5,2,2)
+bar([SS3UnimpairedPC(:,1),SS4UnimpairedPC(:,1),SS5UnimpairedPC(:,1)],'DisplayName','RightPC1')
+axis([0 11 -1 1])
+title(strcat('Average Kinematic Synergy Vector 1                                                           .'))
+
+subplot(5,2,3)
+bar([SS3ImpairedPC(:,2),SS4ImpairedPC(:,2),SS5ImpairedPC(:,2)],'DisplayName','LeftPC2')
+axis([0 11 -1 1])
+subplot(5,2,4)
+bar([SS3UnimpairedPC(:,2),SS4UnimpairedPC(:,2),SS5UnimpairedPC(:,2)],'DisplayName','RightPC2')
+axis([0 11 -1 1])
+title(strcat('Average Kinematic Synergy Vector 2                                                           .'))
+
+
+subplot(5,2,5)
+bar([SS3ImpairedPC(:,3),SS4ImpairedPC(:,3),SS5ImpairedPC(:,3)],'DisplayName','LeftPC3')
+axis([0 11 -1 1])
+ylabel('Normalized Weight of Each DOF')
+subplot(5,2,6)
+bar([SS3UnimpairedPC(:,3),SS4UnimpairedPC(:,3),SS5UnimpairedPC(:,3)],'DisplayName','RightPC3')
+axis([0 11 -1 1])
+title(strcat('Average Kinematic Synergy Vector 3                                                           .'))
+
+subplot(5,2,7)
+bar([SS3ImpairedPC(:,4),SS4ImpairedPC(:,4),SS5ImpairedPC(:,4)],'DisplayName','LeftPC4')
+axis([0 11 -1 1])
+subplot(5,2,8)
+bar([SS3UnimpairedPC(:,4),SS4UnimpairedPC(:,4),SS5UnimpairedPC(:,4)],'DisplayName','RightPC4')
+axis([0 11 -1 1])
+title(strcat('Average Kinematic Synergy Vector 4                                                           .'))
+
+subplot(5,2,9)
+bar([SS3ImpairedPC(:,5),SS4ImpairedPC(:,5),SS5ImpairedPC(:,5)],'DisplayName','LeftPC5')
+axis([0 11 -1 1])
+xlabel('Kinematic DOFs of Impaired Arm')
+subplot(5,2,10)
+bar([SS3UnimpairedPC(:,5),SS4UnimpairedPC(:,5),SS5UnimpairedPC(:,5)],'DisplayName','RightPC5')
+axis([0 11 -1 1])
+xlabel('Kinematic DOFs of Unimpaired Arm')
+title(strcat('Average Kinematic Synergy Vector 5                                                           .'))

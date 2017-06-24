@@ -1,0 +1,10 @@
+Run IK in OpenSim and save the .mot files.
+open .mot files in excel and save as .xlsx.
+then run the Xlsx2Mat.m file to reduce the data from ~170 columns to the 17 columns (i.e. the joint motions that are important).
+Then run CreatKFolds.m to combine the .mat files into k folds. The new files will be used for training and the files from the Xlsx2Mat.m 
+will be used for evaluation. Each fold will be a continuous 40s time period which is not a good way of defining folds (so don't use it!)
+Use CreateFullSet.m to combine all the time periods for one subject into one big data set (Full data set for that subject).
+
+
+Navid Shirzad
+March 30th, 2015

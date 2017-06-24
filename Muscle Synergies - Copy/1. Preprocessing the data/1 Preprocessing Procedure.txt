@@ -1,0 +1,11 @@
+In EMGworks Analysis, go to the existing worksheet called "preprocessing". Open raw emg data files (saved from EMGworks Acquisition). Go to Tool > Export to text file
+and export the raw data into a CSV file. 
+
+Open MATLAB and run CreateMATfromCSV.m function to save the raw data as .mat (which is easier/faster to open in matlab).
+Run FilterRmsNormalizeEMG.m in MATLAB to Filter and RMS and Normalize the data. 
+
+You are done with preprocessiong. Use Processed_Subj_##_Right and Processed_Subj_##_Left to look at synergies.
+
+Navid Shirzad
+March 22, 2016
+

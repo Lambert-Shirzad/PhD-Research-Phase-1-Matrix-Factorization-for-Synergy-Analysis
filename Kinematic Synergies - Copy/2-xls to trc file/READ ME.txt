@@ -1,0 +1,12 @@
+use template.trc as a template. 
+open it with excel.
+copy paste the data from marker.xlsx files that you have created (resampled and filtered).
+Do not worry about the formatting, the order of markers in OpenSim and template.trc are the same
+as the kinect marker order in the resampled+filtered files. 
+make sure to update the "frame number" column, as well as the number of frames in the headings
+of the trc file (2 different locations). Data Rate needs to be updated to be equal to the resampling
+frequency.
+Save as another trc file.
+
+Navid Shirzad
+May 27th, 2015
